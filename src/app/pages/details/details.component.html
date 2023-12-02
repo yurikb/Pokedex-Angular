@@ -16,7 +16,7 @@
 
       <article class="pokemon__status__statistics fadeIn">
         <section>
-          <h3>Estatísticas</h3>
+          <h3>Statistics</h3>
 
           <ol>
             <li *ngFor="let value of pokemon[0].stats">
@@ -29,14 +29,14 @@
           </ol>
         </section>
 
-        <a [routerLink]="['']" class="btn btn__secondary">Voltar</a>
+        <a [routerLink]="['']" class="btn btn__secondary">Return</a>
       </article>
     </section>
   </ng-template>
 
   <img
     src="assets/images/error.png"
-    alt="Erro na listagem dos pokémons"
+    alt="Error listing Pokémons"
     width="100%"
     *ngIf="apiError"
   />
